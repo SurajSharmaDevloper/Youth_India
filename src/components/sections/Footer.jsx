@@ -1,5 +1,4 @@
-import React from "react";
-import mail_box from "../../assets/mailbox.png";
+
 import {
   Facebook,
   Linkedin,
@@ -12,8 +11,8 @@ import {
 } from "lucide-react";
 import Logo from "../base/Logo";
 import bg from "../../assets/Crowd-Silhoutte-PNG-Isolated-File.png";
-import bg1 from "../../assets/newsletter-img.jpg";
 import NewsletterBanner from "../blocks/NewsLetterCTA";
+import { Link, NavLink } from "react-router";
 
 export default function Footer() {
   return (
@@ -46,17 +45,39 @@ export default function Footer() {
 
               {/* SOCIAL */}
               <div className="flex gap-3">
-                {[Facebook, Linkedin, Twitter, Youtube].map((Icon, i) => (
-                  <div
-                    key={i}
-                    className="group bg-white/10 p-2 rounded-lg hover:bg-accent transition cursor-pointer hover:scale-110"
-                  >
-                    <Icon
-                      size={16}
-                      className="group-hover:text-white transition"
-                    />
-                  </div>
-                ))}
+
+                <a href="https://www.facebook.com/YoungIndiaIND" target="_blank" rel="noopener noreferrer"
+
+                  className="group bg-white/10 p-2 rounded-lg hover:bg-accent transition cursor-pointer hover:scale-110"
+                >
+                  <Facebook />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/young-india/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white/10 p-2 rounded-lg hover:bg-accent transition cursor-pointer hover:scale-110"
+                >
+                  <Linkedin />
+                </a>
+                <a
+                  href="https://twitter.com/youngindia_org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+
+                  className="group bg-white/10 p-2 rounded-lg hover:bg-accent transition cursor-pointer hover:scale-110"
+                >
+                  < Twitter />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UC10-262_262_262_262_262_262_262_262"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white/10 p-2 rounded-lg hover:bg-accent transition cursor-pointer hover:scale-110"
+                >
+                  < Youtube />
+                </a>
+
               </div>
             </div>
 
@@ -64,22 +85,56 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold mb-5 text-lg">Organisation</h3>
               <ul className="space-y-3 text-sm text-gray-300">
-                {["About Us", "Executive Committee", "Objectives", "Initiatives"].map(
-                  (item, i) => (
-                    <li
-                      key={i}
-                      className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="text-accent group-hover:translate-x-1 transition"
-                      />
-                      <span className="group-hover:translate-x-1 transition">
-                        {item}
-                      </span>
-                    </li>
-                  )
-                )}
+
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/about" className="group-hover:translate-x-1 transition">
+                    About Us
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/members" className="group-hover:translate-x-1 transition">
+                    Executive Committee
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/partners" className="group-hover:translate-x-1 transition">
+                    Partners
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/initiatives" className="group-hover:translate-x-1 transition">
+                    Initiatives
+                  </NavLink>
+                </li>
+
               </ul>
             </div>
 
@@ -87,24 +142,59 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold mb-5 text-lg">Engage</h3>
               <ul className="space-y-3 text-sm text-gray-300">
-                {["What We Do", "Major Activities", "Upcomings", "Donate"].map(
-                  (item, i) => (
-                    <li
-                      key={i}
-                      className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="text-accent group-hover:translate-x-1 transition"
-                      />
-                      <span className="group-hover:translate-x-1 transition">
-                        {item}
-                      </span>
-                    </li>
-                  )
-                )}
+
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/information-desk" className="group-hover:translate-x-1 transition">
+                    Information Desk
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/major-activities" className="group-hover:translate-x-1 transition">
+                    What We Do
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/contact" className="group-hover:translate-x-1 transition">
+                    Contact Us
+                  </NavLink>
+                </li>
+                <li
+
+                  className="group flex items-center gap-2 hover:text-white cursor-pointer transition"
+                >
+                  <ArrowRight
+                    size={14}
+                    className="text-accent group-hover:translate-x-1 transition"
+                  />
+                  <NavLink to="/donate" className="group-hover:translate-x-1 transition">
+                    Donate
+                  </NavLink>
+                </li>
+
               </ul>
             </div>
+
 
             {/* CONTACT */}
             <div>
@@ -112,22 +202,22 @@ export default function Footer() {
 
               <div className="space-y-4 text-sm text-gray-300 mb-6">
 
-                <div className="flex items-center gap-3 hover:text-white transition">
+                <a href="mailto:info@youngindia.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition">
                   <Mail size={16} className="text-accent" />
                   <span>info@youngindia.org</span>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-3 hover:text-white transition">
+                <a href="tel:+919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white transition">
                   <Phone size={16} className="text-accent" />
                   <span>+91 98765 43210</span>
-                </div>
+                </a>
 
-                <div className="flex items-start gap-3 hover:text-white transition">
+                <a href="https://maps.app.goo.gl/4yX1yX1yX1yX1yX1" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-white transition">
                   <MapPin size={16} className="text-accent mt-1" />
                   <span>Young India Office<br />
                     At/P.O. – Konark, Dist. – Puri,
                     <br />Odisha, Pin – 752111</span>
-                </div>
+                </a>
                 <div className="flex items-start gap-3 hover:text-white transition">
 
                 </div>

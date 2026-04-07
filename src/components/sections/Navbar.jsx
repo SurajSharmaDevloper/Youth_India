@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Logo from '../base/Logo'
 import { BadgeIndianRupee, ClosedCaption, Cross, CrossIcon, Phone, Plus } from 'lucide-react'
-import { NavLink, useLocation } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
 
 const Navbar = () => {
     const [isMenuButton, setIsMenuButton] = useState(false)
@@ -35,11 +35,11 @@ const Navbar = () => {
                     <p className='text-xs text-gray-200'>Est. 1987 · Working across India</p>
                 </div>
                 <div className='flex max-[700px]:hidden justify-between items-center gap-5 text-white px-5'>
-                    <span className='hover:text-gray-300 transition'><i class="fa-brands fa-facebook"></i></span>
-                    <span className='hover:text-gray-300 transition'><i class="fa-brands fa-square-twitter"></i></span>
-                    <span className='hover:text-gray-300 transition'><i class="fa-brands fa-linkedin"></i></span>
-                    <span className='hover:text-gray-300 transition'><i class="fa-brands fa-square-youtube"></i></span>
-                    <span className='hover:text-gray-300 transition'><i class="fa-brands fa-square-instagram"></i></span>
+                    <Link target='_blank' to="https://www.facebook.com/YoungIndiaIND" className='hover:text-gray-300 transition'><i class="fa-brands fa-facebook"></i></Link>
+                    <Link target='_blank' to="https://x.com/YoungIndiaIN" className='hover:text-gray-300 transition'><i class="fa-brands fa-square-twitter"></i></Link>
+                    <Link target='_blank' to="https://www.linkedin.com/" className='hover:text-gray-300 transition'><i class="fa-brands fa-linkedin"></i></Link>
+                    <Link target='_blank' to="https://www.youtube.com/@youngindia1987" className='hover:text-gray-300 transition'><i class="fa-brands fa-square-youtube"></i></Link>
+                    <Link target='_blank' to="https://www.instagram.com/youngindiaindia/" className='hover:text-gray-300 transition'><i class="fa-brands fa-square-instagram"></i></Link>
                 </div>
             </div>
 

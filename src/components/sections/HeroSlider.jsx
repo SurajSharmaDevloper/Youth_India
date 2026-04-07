@@ -124,16 +124,16 @@ export default function HeroSlider() {
 
             {/* Social Sidebar */}
             <div className="absolute right-5 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
-                <a href="#" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
+                <a href="https://www.facebook.com/YoungIndiaIND" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
                     <i className="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
+                <a href="https://x.com/YoungIndiaIN" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
                     <i className="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="#" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
+                <a href="https://www.instagram.com/youngindiaindia/" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
                     <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
+                <a href="https://www.linkedin.com/" className="w-10 h-10 text-white bg-black/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-[#0061B0] transition">
                     <i className="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
