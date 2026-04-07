@@ -4,9 +4,8 @@ import {
     ChevronLeft,
     ChevronRight,
     ArrowRight,
-    Share2,
     CalendarDays,
-    SquareUser,
+    Share2,
 } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import card_1 from '../../assets/card-1.jpg'
@@ -23,7 +22,7 @@ const data = [
         date: "20",
         month: "Sep",
         year: "2016",
-        shares: "Young India Team",
+        shares: "236",
     },
     {
         tag: "Innovation",
@@ -33,7 +32,7 @@ const data = [
         date: "15",
         month: "Aug",
         year: "2016",
-        shares: "Young India Team",
+        shares: "232",
     },
     {
         tag: "Media",
@@ -43,7 +42,7 @@ const data = [
         date: "05",
         month: "Apr",
         year: "2016",
-        shares: "Young India Team",
+        shares: "432",
     },
     {
         tag: "Community",
@@ -53,7 +52,7 @@ const data = [
         date: "20",
         month: "Mar",
         year: "2016",
-        shares: "Young India Team",
+        shares: "456",
     },
 ];
 
@@ -181,7 +180,7 @@ export default function PerfectSlider() {
                                             </button>
 
                                             <div className="flex items-center gap-1 text-sm text-gray-600">
-                                                <SquareUser size={14} />
+                                                <Share2 size={14} />
                                                 {item.shares}
                                             </div>
                                         </div>

@@ -30,8 +30,8 @@ const InfoDesk = () => {
                                 <img className='w-20 h-20 rounded-full border border-blue-200' src={user} alt="" />
                             </div>
                             <div>
-                                <span className='text-accent font-semibold text-sm'>Public Information Officer</span>
-                                <h3 className='text-primary font-extrabold text-xl'>MS.Rojalin Pradhan</h3>
+                                <span className='text-accent font-semibold text-xs md:text-sm'>Public Information Officer</span>
+                                <h3 className='text-primary font-extrabold  text-md md:text-xl'>MS.Rojalin Pradhan</h3>
                                 <p className='text-xs text-slate-600'>Campaign Coordinator</p>
                             </div>
                         </div>
@@ -40,14 +40,14 @@ const InfoDesk = () => {
                                 <img className='w-20 h-20 rounded-full border border-blue-200' src={user} alt="" />
                             </div>
                             <div>
-                                <span className='text-accent font-semibold text-sm'>First Appellate Authority</span>
-                                <h3 className='text-primary font-extrabold text-xl'>Ms. S. Kajal</h3>
+                                <span className='text-accent font-semibold text-xs md:text-sm'>First Appellate Authority</span>
+                                <h3 className='text-primary font-extrabold text-md md:text-xl'>Ms. S. Kajal</h3>
                                 <p className='text-xs text-slate-600'>Administrative Executive</p>
                             </div>
                         </div>
 
-                        <div className='col-span-2 bg-white border p-3 rounded-xl flex gap-5' >
-                            <div>
+                        <div className='col-span-2 bg-white border p-3 rounded-xl flex items-center gap-5' >
+                            <div className='shrink-0'>
                                 <img className='w-12' src={DocIcon} alt="" />
                             </div>
                             <div>

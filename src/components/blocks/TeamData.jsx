@@ -57,7 +57,7 @@ const team = [
 export default function TeamSection() {
     return (
         <div className="bg-blue-50/60 py-20 px-6 md:px-12 lg:px-20">
-            <div className="max-w-7xl  mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex max-[650px]:flex-col max-[650px]:items-start justify-between items-end gap-2">
                     <SectionHeading
                         title="Executive "
@@ -73,6 +73,7 @@ export default function TeamSection() {
                 <hr className="mb-8 mt-2" />
 
                 <Swiper
+                    className="mx-auto "
                     modules={[Autoplay, Pagination, Navigation]}
                     slidesPerView={4}
                     spaceBetween={25}
@@ -102,9 +103,9 @@ export default function TeamSection() {
                     }}
                 >
                     {team.map((item, i) => (
-                        <SwiperSlide key={i} className="h-auto">
+                        <SwiperSlide key={i} className="h-auto m-0">
                             <Link to={`/members/#${item.id}`} className="block h-full">
-                                <div className="h-full flex flex-col gap-3 group max-[600px]:w-[400px] max-[400px]:w-full max-[400px]:mx-5 bg-white border border-blue-100 p-3 rounded-2xl transition">
+                                <div className="h-full flex flex-col gap-3 group max-[600px]:w-[400px] max-[400px]:w-full m-0 bg-white border border-blue-100 p-3 rounded-2xl transition">
 
                                     {/* IMAGE WRAPPER */}
                                     <div className="relative rounded-xl border border-blue-100 overflow-hidden">
