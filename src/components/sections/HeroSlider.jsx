@@ -88,17 +88,17 @@ export default function HeroSlider() {
 
                         {/* Badge */}
                         <div className="mb-6">
-                            <span className="bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm flex items-center gap-2 w-fit">
+                            <span className="bg-white/10 border border-white/40 backdrop-blur px-4 py-2 rounded-full text-sm flex items-center gap-2 w-fit">
                                 Social Transformation & Development
                             </span>
                         </div>
 
                         {/* Heading */}
                         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-center leading-tight mb-4">
-                            Young India is working for
+                            Young India is working for over 37 years to bring
                             <br />
-                            <span className="text-yellow-500">
-                                over 37 years to bring
+                            <span className="text-yellow-400">
+                                Social Transformation & Development
                             </span>
                         </h1>
 

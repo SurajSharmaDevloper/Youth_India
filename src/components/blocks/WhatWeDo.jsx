@@ -1,7 +1,7 @@
-import React from "react";
 import SectionHeading from "./SectionHeading";
 import { Book, Globe, Monitor, Check } from "lucide-react";
 import Button from "../base/Button";
+import { NavLink } from "react-router";
 
 const WhatWeDo = () => {
     return (
@@ -22,7 +22,7 @@ const WhatWeDo = () => {
                         label="Our Work"
                     />
                     <Button>
-                        See The Major Activities
+                        <NavLink to="/major-activities">See All Major Activities</NavLink>
                     </Button>
                 </div>
                 <hr />

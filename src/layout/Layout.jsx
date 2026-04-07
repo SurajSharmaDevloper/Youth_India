@@ -5,7 +5,7 @@ import Footer from '../components/sections/Footer'
 
 const Layout = () => {
   return (
-    <main className='relative transition-all' id='top'>
+    <main className='relative bg-blue-50/60 transition-all' id='top'>
       <Navbar />
       <Outlet />
       <Footer />

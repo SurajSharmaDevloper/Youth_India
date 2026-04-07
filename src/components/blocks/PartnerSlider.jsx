@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Link } from "react-router";
 import partner_1 from "../../assets/partner-1.jpg"
 import partner_2 from "../../assets/partner-2.jpg"
 import partner_3 from "../../assets/partner-3.jpg"
@@ -56,13 +57,19 @@ export default function PartnerSlider() {
     return (
         <div className="w-full px-6 md:px-12 lg:px-20 bg-blue-50/60">
             <div className="max-w-7xl mx-auto py-20 rounded-2xl">
-                <SectionHeading
-                    label="OUR NETWORKS"
-                    title="Our"
-                    highlight=" Partners"
-                    description=""
-                />
-                <hr className='my-5 hr-line' />
+                <div className="flex w-full max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 justify-between items-end">
+                    <div className="max-w-4xl">
+                        <SectionHeading
+                            label="OUR NETWORKS"
+                            title="Our"
+                            highlight=" Partners"
+                            description="Young India works in alliance with government bodies, civil society organizations, media institutions, and academic partners to drive sustainable development."
+                        />
+                    </div>
+
+
+                </div>
+                <hr className='mt-5 mb-5 hr-line' />
 
                 <div
                     className="relative overflow-hidden rounded-2xl mx-5 md:mx-0"
@@ -80,7 +87,7 @@ export default function PartnerSlider() {
                         {[...logos, ...logos].map((logo, i) => (
                             <div
                                 key={i}
-                                className="min-w-[200px] p-5 rounded-xl bg-white flex justify-center items-center"
+                                className="min-w-[200px] p-5 border border-blue-100 rounded-xl bg-white flex justify-center items-center"
                             >
                                 <img
                                     src={logo}
@@ -90,8 +97,19 @@ export default function PartnerSlider() {
                             </div>
                         ))}
                     </div>
+
+                </div>
+                <div className="bg-blue-100 border border-blue-200 rounded-2xl mt-12 border border-blue-100 p-6 text-center">
+                    <h3 className="font-bold text-primary text-lg mb-2">Become a Partner</h3>
+                    <p className="text-sm text-slate-500 mb-4">Join our network of organizations committed to youth empowerment and social transformation.</p>
+                    <Link to="/partners" className="group relative bg-primary text-white px-6 py-2.5 rounded-md font-medium overflow-hidden inline-flex items-center gap-2">
+                        <span className="relative z-10 flex items-center gap-2">Know More <span className="group-hover:translate-x-1 transition"><i className="fa-solid fa-arrow-right"></i></span></span>
+                        <span className="absolute inset-0 bg-secondary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+                    </Link>
+
                 </div>
             </div>
+
         </div>
     );
 }

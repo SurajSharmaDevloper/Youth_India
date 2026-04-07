@@ -102,11 +102,16 @@ export default function PerfectSlider() {
         return () => slider.removeEventListener("transitionend", handleEnd);
     }, [index]);
 
+
     const next = () => setIndex((p) => p + 1);
     const prev = () => setIndex((p) => p - 1);
 
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
-        <div className="w-full px-6 md:px-12 lg:px-20 white">
+        <div className="w-full px-6 md:px-12 lg:px-20 bg-white">
             <div className=" max-w-7xl mx-auto py-20 relative">
                 <div className="flex w-full max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 justify-between items-end ">
                     <SectionHeading
@@ -115,7 +120,7 @@ export default function PerfectSlider() {
                         highlight="& Stories"
                         description="Stay informed with the latest from Young India's work, events, and community impact across India."
                     />
-                    <Link to="/news-and-stories" className="flex items-center gap-1 border border-blue-600 text-blue-600 px-3 py-1.5 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition">View All</Link>
+                    <Link onClick={handleClick} to="/news-and-stories" className="flex items-center gap-1 border border-blue-600 text-blue-600 px-3 py-1.5 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition">View All</Link>
                 </div>
                 <hr className="mt-5 hr-line " />
 

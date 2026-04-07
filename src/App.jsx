@@ -13,12 +13,16 @@ import { CommunityRadioInternship, ESHG, OurPartners, RuralMuseum } from "./page
 import Gallery from "./pages/Gallery";
 import NewsAndStories from "./pages/NewsAndStories";
 import Members from "./pages/Members";
-
+import ScrollToTop from "./components/ScrollToTop";
+import PageLoader from "./components/PageLoader";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
+    <>
+      <ScrollToTop />
+      <PageLoader />
+      <Routes>
+        <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/home2" element={<Home2 />} />
         <Route path="/about" element={<About />} />
@@ -37,5 +41,6 @@ export default function App() {
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
+    </>
   )
 }

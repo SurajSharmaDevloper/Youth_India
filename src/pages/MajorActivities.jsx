@@ -88,6 +88,7 @@ export default function MajorActivities() {
                     highlight="Conducted"
                     description="Young India has been at the forefront of social transformation through sustained, community-driven programmes since 1989."
                 />
+                <hr className="mt-3 mb-8" />
 
                 {/* Activities */}
                 <div className="space-y-5">
@@ -123,7 +124,7 @@ export default function MajorActivities() {
                 </div>
 
                 {/* Stats strip */}
-                <div className="bg-primary rounded-2xl p-6">
+                <div className="bg-primary rounded-2xl mt-6 p-6">
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
                         {[
                             { n: "33+", l: "Years Active" },
